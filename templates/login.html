@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="UTF-8">
+        <title>登录 | AC聊天室</title>
+    </head>
+   
+    <style>
+        body{ text-align:center} 
+        body{
+      height: 100%;    
+    	background: #38a047;
+    }
+        #Login{   
+            position: absolute; 
+            background-color: rgb(0, 60, 20, 10);
+            border: rgb(5,5,5) dotted 2px;
+            border-radius: 10%;
+            top: 50%;   
+            left: 50%;  
+            width: auto;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            padding-left: 5%; padding-right: 5%; 
+            -webkit-transform: translate(-50%, -50%);   
+            -moz-transform: translate(-50%, -50%);   
+            -ms-transform: translate(-50%, -50%);   
+            -o-transform: translate(-50%, -50%);   
+            transform: translate(-50%, -50%);   
+        }   
+    </style>
+    <body>
+        <div id="Login">
+        <h1 style="color: rgb(212, 243, 233);">
+            登录
+        </h1>
+        <form action="http://127.0.0.1:127/loadLogin" method="get">
+            <input class="" type="text" name="name" required placeholder="用户名" style="width: 100%;">
+            <input class="" type="password" name="password" required placeholder="密码" style="width: 100%">
+            <!--验证码-->
+    
+            <center><input type="submit" value="确认 " class="btn1"></center>
+        </form>
+        <br><br><br></div>
+     
+    </body>
+</html>

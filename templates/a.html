@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test2</title>
+</head>
+
+<body>
+    <div class="main">
+        <form style="margin-top:50px;">
+            <input type="text">
+            <span class="span">
+                <label>用户名 :</label>
+            </span>
+        </form>
+    </div>
+    <style>
+        .main {
+            height: 500px;
+            width: 800px;
+            margin: auto;
+        }
+        
+        .main form {
+            position: relative;
+            font-weight: blod;
+        }
+        
+        .main input {
+            height: 50px;
+            width: 300px;
+            margin: auto;
+            border: 0;
+            box-shadow: none;
+            border-bottom: 1px solid #6a7989;
+            transition: border-bottom 0.5s;
+        }
+        
+        .main .span {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 50px;
+        }
+        
+        .main label {
+            font-weight: bold;
+            color: #6a7989;
+            line-height: 50px;
+            display: block;
+        }
+        
+        .main input:focus {
+            outline: none;
+            border-bottom: 2px solid aqua;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            var span = document.getElementsByTagName('span');
+            var input = document.getElementsByTagName('input');
+            input[0].onfocus = function() {
+                span[0].style.bottom = '30px';
+            }
+            input[0].onblur = function() {
+                span[0].style.bottom = '0';
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+body {
+  
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 1rem 2.5rem; */
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.logo {
+  font-size: 34px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.site-nav {
+  border-bottom: 1px solid darkgrey;
+}
+
+ul#c {
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: 0;
+  list-style-type: none;
+}
+ul#c:hover li:not(:hover) a {
+  opacity: 0.2;
+}
+ul#c li#c2 {
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+
+}
+#s::-webkit-scrollbar {
+  width: 20px;
+  height: 8px;
+}
+
+#s::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  border: 6px solid rgba(0, 0, 0, 0);
+  box-shadow: 8px 0 0 #A5ADB7 inset;
+}
+
+#s::-webkit-scrollbar-thumb:hover {
+  box-shadow: 8px 0 0 #4A4A4A inset;
+}
+ul#c li#c2::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #06a175;
+  transform: scaleX(0);
+  /* rgba(0, 255, 255, 255) */
+  transition: 0.4s rgba(255, 255, 255, 255);
+}
+ul#c li#c2:hover::after, ul li.active::after {
+  transform: scaleX(1);
+}
+ul#c li#c2 a {
+  position: relative;
+  display: flex;
+  color: white;
+  font-family: Lato, sans-serif;
+  text-decoration: none;
+  transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+}
+.btn {
+/* 文字颜色 */
+color: #0099CC; 
+/* 清除背景色 */
+background: transparent; 
+/* 边框样式、颜色、宽度 */
+border: 2px solid #0099CC;
+/* 给边框添加圆角 */
+border-radius: 6px; 
+/* 字母转大写 */
+border: none;
+color: white;
+padding: 16px 32px;
+text-align: center;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+cursor: pointer;
+text-decoration: none;
+text-transform: uppercase;
+}
+.btn1 {
+background-color: white; 
+color: black; 
+border: 2px solid #008CBA;
+width: 100px;
+}
+/* 悬停样式 */
+.btn1:hover {
+background-color: #008CBA;
+color: white;
+}
+  input{
+          border: 1px solid #ccc;
+          padding: 7px 0px;
+          border-radius: 3px;
+          padding-left:5px;
+          -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+          -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+          -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+      }
+      input:focus{
+              border-color: #66afe9;
+              outline: 0;
+              -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+              box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+      }
